@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/iv_houseImage"
+        android:layout_width="401dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/addhouse"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/et_houseId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/iv_houseImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_house_id"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_houseLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_houseId"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_exact_house_location"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_noOfRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_houseLocation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_total_no_of_room"
+        android:inputType="number"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_rentPerRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_noOfRoom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_rent_per_room"
+        android:inputType="number"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_houseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_below="@id/et_rentPerRoom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_about_house_detail_and_facilities_available_in_house_like_ac_washing_machine_kitchen_etc"
+        android:lines="5"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_addHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_houseDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/add_house"
+        android:textAllCaps="false"
+        android:textColor="@color/background2"
+        android:textSize="16sp" />
+
+</RelativeLayout>

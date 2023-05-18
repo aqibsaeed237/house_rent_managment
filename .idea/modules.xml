@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/House_Rental_Management.iml" filepath="$PROJECT_DIR$/.idea/modules/House_Rental_Management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/House_Rental_Management.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

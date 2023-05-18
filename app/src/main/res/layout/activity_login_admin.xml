@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.LoginAdmin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:textSize="26sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryblack"
+                android:layout_marginStart="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/login"
+                android:layout_height="200dp"
+                android:contentDescription="@string/todooo" />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorPrimaryblack"
+                android:textColor="@color/black"
+                android:id="@+id/et_email"
+                android:layout_height="wrap_content"
+                android:autofillHints="" />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:hint="@string/enter_password"
+                android:textColorHint="@color/colorPrimaryblack"
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:id="@+id/et_password"
+                android:layout_height="wrap_content"
+                tools:ignore="TextFields"
+                android:autofillHints="" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/btn_login"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="end"
+                android:text="@string/forgot_your_password"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

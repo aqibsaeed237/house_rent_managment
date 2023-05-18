@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.ViewHouseDetail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="350dp">
+
+                <TextView
+                    android:id="@+id/hoseId"
+                    android:layout_width="match_parent"
+                    android:text="House Id"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="300dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:id="@+id/rent"
+                    android:layout_width="match_parent"
+                    android:text="Rent Per Room"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:src="@drawable/call"
+                    android:layout_weight="1"
+                    android:layout_height="80dp" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_weight="1"
+                    android:layout_height="80dp" />
+
+                <ImageView
+                    android:layout_width="87dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/vendorlogo2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Details"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryblack"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="6dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:src="@drawable/vendorlogo2"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:id="@+id/ownerId"
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:lines="2"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:text="Owner Id"
+                        android:textColor="@color/colorPrimaryblack"
+                        android:textSize="16dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:src="@drawable/logo"
+
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:id="@+id/noOfRoom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="2"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:text="No of Room"
+                        android:textColor="@color/colorPrimaryblack"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="6dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:src="@drawable/ic_baseline_home_24"
+                        android:layout_height="60dp"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:lines="2"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:text="Location"
+                        android:textColor="@color/colorPrimaryblack"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    android:weightSum="3"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="102dp"
+                        android:layout_height="53dp"
+
+                        android:src="@drawable/ic_baseline_description_24"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="259dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:lines="4"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:text="House Description"
+                        android:textColor="@color/colorPrimaryblack"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/delerytype" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

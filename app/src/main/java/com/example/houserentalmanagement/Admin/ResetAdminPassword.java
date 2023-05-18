@@ -1,0 +1,52 @@
+package com.example.houserentalmanagement.Admin;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.houserentalmanagement.R;
+import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Objects;
+
+public class ResetAdminPassword extends AppCompatActivity {
+
+    EditText et_sendEmail;
+    Button btn_reset;
+
+    FirebaseAuth firebaseAuth;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_reset_password_user);
+        setTitle("Reset Password");
+
+        et_sendEmail = findViewById(R.id.et_sendEmail);
+        btn_reset = findViewById(R.id.btn_reset);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        btn_reset.setOnClickListener(v -> {
+            String email = et_sendEmail.getText().toString();
+            if (email.equals("")){
+                Toast.makeText(ResetAdminPassword.this, "Email is empty", Toast.LENGTH_SHORT).show();
+            }else{
+                firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener(task -> {
+                    if (task.isSuccessful()){
+                        Toast.makeText(ResetAdminPassword.this, "Please Check Your Email", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(ResetAdminPassword.this, LoginAdmin.class));
+                    }else{
+                        String error = Objects.requireNonNull(task.getException()).getMessage();
+                        Toast.makeText(ResetAdminPassword.this, error, Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+    }
+}
