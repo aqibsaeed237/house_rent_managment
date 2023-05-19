@@ -51,10 +51,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="16dp"
+                android:contentDescription="@string/todoo"
                 android:paddingTop="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/logo"
-                android:contentDescription="@string/todoo" />
+                tools:ignore="ImageContrastCheck" />
 
             <LinearLayout
                 android:id="@+id/ll_usernameCSE"

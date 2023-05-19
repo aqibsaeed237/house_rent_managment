@@ -47,4 +47,5 @@
     <string name="age_21">Age : 21</string>
     <string name="name_aqib_saeed">Name : Aqib Saeed</string>
     <string name="job_android_developer">Job: Android Developer</string>
+    <string name="admin_panel">Admin Panel</string>
 </resources>

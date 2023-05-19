@@ -31,12 +31,10 @@ public class DashboardAdmin extends AppCompatActivity {
         CardView viewFeedback = findViewById(R.id.view_FeedBack);
         CardView logOut = findViewById(R.id.logOut);
         CardView removehouse = findViewById(R.id.remove_house);
-        CardView removemember = findViewById(R.id.remove_member);
         auth = FirebaseAuth.getInstance();
 
         viewUser.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ViewUser.class)));
         removehouse.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), RemoveHouse.class)));
-        removemember.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), RemoveMember.class)));
         viewOwner.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ViewOwner.class)));
 
         viewFeedback.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ViewAllFeedback.class)));

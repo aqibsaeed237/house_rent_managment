@@ -135,7 +135,6 @@
         android:layout_below="@id/et_memberPhoneNumber"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="20dp"
-        android:backgroundTint="@color/background3"
         android:text="@string/add_member"
         android:textAllCaps="false"
         android:textColor="@color/textColor"
